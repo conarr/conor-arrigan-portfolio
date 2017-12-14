@@ -1,0 +1,558 @@
+	html
+		{
+		font-size: 100%;
+		box-sizing: border-box;
+		text-decoration: none;
+		}
+
+	*, *:before, *:after
+		{
+		box-sizing: inherit;
+		}
+
+	body
+		{
+		font-family: 'Roboto', sans-serif;
+		font-size: 14pt;
+		line-height: 15pt;
+		margin: 0 auto 0 auto;
+		text-decoration: none;
+		background-color: #000000;
+		}
+
+	.cf:before, .cf:after
+		{
+	    content: " ";
+	    display: table;
+		}
+
+	.cf:after
+		{
+	    clear: both;
+		}
+
+	.portfolioFilter a
+		{ 
+	    margin-right: 10px; 
+		color: #666;
+		text-decoration: none;
+		}
+
+	.portfolioFilter a.current
+		{ 
+	    font-weight: bold;
+		}
+
+
+
+
+
+/* ISOTOPE STARTS HERE */
+	.isotope-item
+		{
+	    z-index: 2;
+		}
+
+	.isotope-hidden.isotope-item
+		{
+	    pointer-events: none;
+	    z-index: 1;
+		}
+
+	.isotope, .isotope .isotope-item
+		{
+	    -webkit-transition-duration: 0.8s;
+	    -moz-transition-duration: 0.8s;
+	    transition-duration: 0.8s;
+		}
+
+	.isotope
+		{
+	    -webkit-transition-property: height, width;
+	    -moz-transition-property: height, width;
+	    transition-property: height, width;
+		}
+
+	.isotope .isotope-item
+		{
+	    -webkit-transition-property: -webkit-transform, opacity;
+	    -moz-transition-property: -moz-transform, opacity;
+	    transition-property: transform, opacity;
+		}
+/* ISOTOPE ENDS HERE */
+
+
+/* HOME PAGE SLIDER STARTS HERE */
+	#jsSlides
+		{
+		position: relative;
+		display: block;
+		}
+
+	#jsSlides img
+		{
+	 	position: absolute;
+		z-index: 1;
+		background-color: white;
+		line-height: 0;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+		}
+
+	#jsSlides img.active
+		{
+		z-index: 3
+		}
+
+	#jsSlides img.base
+		{
+		z-index: -1;
+		position: static;
+		display: block
+		}
+/* HOME PAGE SLIDER ENDS HERE */
+
+
+/* HOME PAGE MAIN MENU STARTS HERE */
+	#mainMenuOuterContainer
+		{
+	    background-color: #000000;
+	    height: 30px;
+		}
+
+	#mainMenuInnerContainer
+		{
+	    max-width: 1080px;
+	    margin: 0 auto  0 auto;
+	   	background-color: #ee7248;
+	   	height: 30px;
+		}
+
+	.portfolioFilter
+		{
+	    display: flex;
+		justify-content: space-around;
+		flex-direction: row;
+		align-items: center;
+		flex-wrap: wrap;
+	   	height: 30px;
+		}
+
+	.portfolioFilter a
+		{
+	    color: #000000;
+	    text-decoration: none;
+		text-align: center;
+	    font-size: 16px;
+	    font-weight: 700;
+	    text-transform: uppercase;
+		}
+
+ 	.portfolioFilter a:hover
+		{
+	    color: #ffffff;
+		}
+/* HOME PAGE MAIN MENU ENDS HERE */
+
+
+	/*  Generic Page Footer Starts Here  */
+		footer
+			{
+		    max-width: 1080px;
+		    margin: 0 auto  0 auto;
+		    padding: 15px;
+			}
+
+		#footerContactItems
+			{
+			margin: 0 auto 0 auto;
+			max-width: 1080px;
+			display: flex;
+			justify-content: space-between;
+			flex-direction: row;
+			align-items: center;
+			flex-wrap: wrap;
+			}
+
+		.footerHeading
+			{
+			padding-bottom: 7px;
+			color: #fdb813;
+		  	text-align: left;
+			font-size: 1.1em;
+			font-family: 'Lobster', sans-serif;
+			}
+
+		#footerOuterLeft, #footerInnerLeft,	#footerInnerRight
+			{
+			float: left;
+			width: 25%;
+			}
+
+		#footerOuterRight
+			{
+			float: right;
+			width: 25%;
+			}
+
+		#footerOuterLeft p
+			{
+			color: #005c8d;
+		  	text-align: left;
+			font-size: 0.7em;
+			}
+
+		#footerOuterLeft i
+			{
+			color: #fdb813;
+			}
+
+		.phoneIcon
+			{
+			margin-top: 9px;
+			margin-left: 2px;
+			margin-right: 6px;
+			}
+
+		.mobileIcon
+			{
+			margin-top: 7px;
+			margin-left: 4px;
+			margin-right: 8px;
+			}
+
+		.envelopeIcon
+			{
+			margin-top: 7px;
+			margin-right: 5px;
+			}
+
+		.webAddress
+			{
+			margin-top: 40px;
+			}
+
+		.webAddress a
+			{
+			text-decoration: none;
+			color: #005c8d;
+		  	text-align: left;
+			font-size: 1.1em;
+			font-family: 'Lobster', sans-serif;
+			}
+
+		#footerInnerRight th, #footerInnerRight td
+			{
+			color: #005c8d;
+		  	text-align: left;
+			font-size: 0.7em;
+			line-height: 1.4em;
+			}
+
+		#footerInnerRight th
+			{
+			padding-right: 20px;
+			font-weight: 700;
+			}
+
+		#footerOuterRight img
+			{
+		    padding-top: 15px;
+		    padding-bottom: 15px;
+			}
+
+		#copyrightBarContainer
+			{
+			clear: both;
+			background-color: #005c8d;
+			}
+
+		#copyrightBar
+			{
+		    max-width: 1100px;
+		    margin: 0 auto  0 auto;
+		    padding-left: 15px;
+		    padding-top: 5px;
+		    padding-bottom: 5px;
+			}
+
+		#copyrightBar p
+			{
+			color: #ffffff;
+		  	text-align: left;
+			font-size: 0.6em;
+			font-style: italic;
+			}
+	/*  Generic Page Footer Ends Here  */
+
+
+
+/*  H O M E  */
+	/*  Home Page 'Eat' 'Drink' 'Jazz' Links Panel Starts Here  */
+	/*   	#threeLinks
+			{
+			background-image: url(../images/retro-microphone-backdrop.jpg);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: 50% 50%;
+			}  */
+
+		.aboutContainer
+			{
+			margin: 0 auto 0 auto;
+			max-width: 1080px;
+			}
+
+		.aboutText
+			{
+			padding-top: 30px;
+			font-size: 18px;
+			line-height: 28px;
+			color: #ffffff;
+			}
+
+		.portfolioContainer
+			{
+			margin: 0 auto 0 auto;
+			max-width: 1080px;
+			display: flex;
+			justify-content: space-around;
+			flex-direction: row;
+			align-items: center;
+			flex-wrap: wrap;
+			}
+
+		.threeLinksPanel
+			{
+			width: 360px;
+			align-items: center;
+			}
+
+		.websitesBlock1, .websitesBlock2, .websitesBlock3, .generalBlock,
+		.arraysBlock, .functionsBlock, .loopsBlock, .trumpBlock, .hotelCrapBlock,
+		.trafficBlock, .aboutBlock
+			{
+			height: 200px;
+			width: 360px;
+			}
+
+		.websitesBlock1
+			{
+			background-image: url("../images/pinkFloyd.jpg");
+			}
+
+		.websitesBlock2
+			{
+			background-image: url("../images/jazzCafe.jpg");
+			}
+
+		.websitesBlock3
+			{
+			background-image: url("../images/terminatorT850.jpg");
+			}
+
+		.generalBlock
+			{
+			background-image: url("../images/general.jpg");
+			}
+
+		.aboutBlock
+			{
+			background-image: url("../images/aboutme.jpg");
+			}
+
+		.trumpBlock
+			{
+			background-image: url("../images/trump.jpg");
+			}
+
+		.hotelCrapBlock
+			{
+			background-image: url("../images/hotel-crap.jpg");
+			}
+
+		.arraysBlock
+			{
+			background-image: url("../images/arrays.jpg");
+			}
+
+		.trafficBlock
+			{
+			background-image: url("../images/traffic.jpg");
+			}
+
+		.functionsBlock
+			{
+			background-image: url("../images/functions.jpg");
+			}
+
+		.loopsBlock
+			{
+			background-image: url("../images/loops.jpg");
+			}
+
+		#jazzCircle
+			{
+			background-image: url("../images/three-home-links/jazz-home-link.jpg");
+			}
+
+		.imageOverlay
+			{
+			background: transparent;
+			height: inherit;
+			width: inherit;
+			transition: all 2s ease;
+			position: absolute;
+			}
+
+		.imageOverlay a
+			{
+			text-decoration: none;
+			}
+
+		.imageOverlay h3, .imageOverlay p
+			{
+			color: #ffffff;
+		  	text-align: center;
+			text-decoration: none;
+			transform: scale(0);
+			opacity: 0;
+			transition: all 0.6s ease;
+			text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.7);
+			text-align: center;
+			}
+
+		.imageOverlay:hover
+			{
+			background: rgba(0, 0, 0, 0.6);
+			}
+
+		.imageOverlay:hover h3, .imageOverlay:hover p
+			{
+			transform: scale(1);
+			opacity: 1;
+			}
+
+		.imageOverlay h3
+			{
+			transition: all 0.5s ease;
+			margin-top: 70px;
+			font-size: 36px;
+			font-family: 'Roboto', sans-serif;
+			}
+
+		.imageOverlay p
+			{
+			transition: all 1.5s ease;
+			margin-top: 2px;
+			font-size: 15px;
+			line-height: 22px;
+			padding: 10px;
+			}
+	/*  Home Page 'Eat' 'Drink' 'Jazz' Links Panel Ends Here  */
+
+
+	/*  Home Page 'About Us' Panel Starts Here  */
+		#aboutUs
+			{
+			background-image: url(../images/chocolate-cake-backdrop.jpg);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: 50% 50%;
+			padding: 15px;
+			}
+
+		#aboutUsContainer
+			{
+			margin: 0 auto 0 auto;
+			max-width: 1100px;
+			display: flex;
+			justify-content: space-between;
+			flex-direction: row;
+			align-items: center;
+			flex-wrap: wrap;
+			}
+
+		#aboutUsText h2
+			{
+			padding-top: 30px;
+			padding-bottom: 5px;
+			color: #fdb813;
+		  	text-align: left;
+			font-size: 36px;
+			font-family: 'Lobster', sans-serif;
+			text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
+			}
+
+		#aboutUsText p
+			{
+			width: 40vw;
+			padding-top: 5px;
+			padding-bottom: 30px;
+			color: #ffffff;
+		  	text-align: left;
+			font-size: 13px;
+			line-height: 18px;
+			text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
+			}
+
+		#jeanLeMorittePhoto
+			{
+			border-radius: 50%;
+			background-image: url(../images/jean-le-moritte.jpg);
+			border: solid #fdb813 3px;
+			height: 250px;
+			width: 250px;
+			overflow: hidden;
+			box-shadow: inset 2px 2px 2px 2px rgba(0, 0, 1, 0.6);
+			}
+
+		.headChef img
+			{
+			margin-top: 25px;
+			height: 250px;
+			width: 250px;
+	  		position: relative;
+	  		z-index: -2;
+	  		}
+
+		#jeanLeMoritteText
+			{
+			height: 70px;
+			width: 220px;
+			background-color: #fdb813;
+			border-radius: 5%;
+	  		position: relative;
+	  		left: 50%;
+	  		margin-left: -135px;
+	  		margin-top: -45px;
+			margin-bottom: 25px;
+			z-index: 1;
+	  		}
+
+		#aboutUsPhoto
+			{
+			width: 300px;
+	  		}
+
+		#jeanLeMoritteText h3
+			{
+			padding-top: 15px;
+			padding-bottom: 3px;
+			color: #005c8d;
+		  	text-align: center;
+			font-size: 30px;
+			font-family: 'Lobster', sans-serif;
+			}
+
+		#jeanLeMoritteText p
+			{
+			padding-top: 3px;
+			color: #000000;
+		  	text-align: center;
+			font-size: 16px;
+			font-weight: 700;
+			}
+	/*  Home Page 'About Us' Panel Ends Here  */

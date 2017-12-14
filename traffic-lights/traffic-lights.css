@@ -1,0 +1,48 @@
+body
+	{
+	font-family: Arial;
+	background-color: #000000;
+	}
+
+#wrapper
+	{
+	width: 1000px;
+	height: 690px;
+	margin: 0 auto 0 auto;
+	background-image: url(traffic-lights.jpg);
+	}
+
+#lightsContainer
+    {
+    width: 130px;
+    height: 800px;
+    margin: 0 auto 0 auto;
+    padding-top: 100px;
+    }
+
+.amberLightArea
+    {
+    width: 130px;
+    height: 130px;
+    background-image: url('allLightsOff.png');
+    margin-top: 24px;
+    margin-bottom: 20px;
+    }
+
+.trafficLightOff
+    {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-image: url('allLightsOff.png');
+    }
+
+.redLightOn
+    {
+    background-image: url('redLightOn.png');
+    }
+
+.greenLightOn
+    {
+    background-image: url('greenLightOn.png');
+    }
